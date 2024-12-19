@@ -6,6 +6,8 @@ sources:
     schema: dbt_test  
     tables:
       - name: orders
+        description: this table contain all order data
+
       - name: customers
       - name: items
       - name: products
