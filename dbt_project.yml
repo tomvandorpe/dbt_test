@@ -39,9 +39,3 @@ models:
   +materialized: table
     # Applies to all files under models/example/
 
-    
-seeds:
-  staging:
-    stg_customers:
-      +column_types:
-        customer_ID: varchar(16777216)

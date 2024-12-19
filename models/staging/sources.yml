@@ -7,6 +7,10 @@ sources:
     tables:
       - name: orders
         description: this table contain all order data
+        freshness:
+          warn_after:
+            count: 6
+            period: hour
 
       - name: customers
       - name: items
