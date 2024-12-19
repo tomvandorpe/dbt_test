@@ -1,10 +1,4 @@
 
-{{
-    config(
-        materialized='table'
-    )
-}}
-
-select ID as customer_ID, FIRST_NAME, LAST_NAME
+select ID as customer_ID, name
 
 from {{ source('jaffle_shop', 'customers') }}
