@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: customers
+    description: orders per customer
+    tests: 
+      - dbt_utils.expression_is_true:
+          expression: "number_of_orders > 0"
+
