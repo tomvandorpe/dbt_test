@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: raw
+    schema: dbt_test
+    tables:
+      - name: orders
+        description: this table contain all order data
+        freshness:
+          warn_after:
+            count: 6
+            period: hour
+
+      - name: customers
+      - name: items
+      - name: products
+      - name: stores
+      - name: supplies
+
+  - name: jaffle_shop2
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: orders
+        description: this table contain all order data
+        freshness:
+          warn_after:
+            count: 6
+            period: hour
+
+      - name: customers
+      - name: items
+      - name: products
+      - name: stores
+      - name: supplies
