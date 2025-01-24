@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: stripe
-    database: raw
-    schema: stripe
+    database: DBT_LEARN
+    schema: dbt_test
     tables:
-      - name: payment
+      - name: payments

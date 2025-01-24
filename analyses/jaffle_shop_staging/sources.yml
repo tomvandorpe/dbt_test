@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    database: raw
+    database: DBT_LEARN
     schema: dbt_test
     tables:
       - name: orders
@@ -19,8 +19,8 @@ sources:
       - name: supplies
 
   - name: jaffle_shop2
-    database: raw
-    schema: jaffle_shop
+    database: DBT_LEARN
+    schema: dbt_test
     tables:
       - name: orders
         description: this table contain all order data
@@ -30,7 +30,5 @@ sources:
             period: hour
 
       - name: customers
-      - name: items
-      - name: products
-      - name: stores
-      - name: supplies
+      
+     

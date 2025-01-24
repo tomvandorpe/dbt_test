@@ -20,5 +20,5 @@ exposures:
     depends_on:
       - ref('customer_orders_exercise')
     owner:
-      name: Tom
+      name: Tom vandorpe
       email: tom@jaffleshop.com
