@@ -18,7 +18,7 @@ with payments_base as (
         from payments_base as payments
 
     left join orders_base as orders
-    on payments.order_id = orders.order_id
+    on payments.orderid = orders.id
     )
 
 select * from orders_payments
