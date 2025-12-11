@@ -1,3 +1,6 @@
+{{config(materialized='view') }}
+
+
 with
     orders_base as (
         select
