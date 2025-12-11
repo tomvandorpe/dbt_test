@@ -2,7 +2,7 @@ with payments_base as (
         select
         ID as transaction_seq,
         *
-        from {{ source("stripe", "payments") }}
+        from {{ source("stripe", "payment") }}
     ),
 
 
