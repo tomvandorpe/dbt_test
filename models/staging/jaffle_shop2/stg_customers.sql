@@ -4,7 +4,7 @@ customer_base as (
         id,
         first_name as customer_first_name,
         last_name as customer_last_name
-    from {{ source("jaffle_shop2", "customers") }}
+    from {{ source("jaffle_shop", "customers") }}
 )
 
 select *
