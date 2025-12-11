@@ -5,4 +5,4 @@ sources:
     database: RAW
     schema: STRIPE
     tables:
-      - name: PAYMENT
+      - name: payment
