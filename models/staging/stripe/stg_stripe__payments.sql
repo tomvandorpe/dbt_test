@@ -1,6 +1,6 @@
 with payments as (
         select
-        orderid,
+        orderid as order_id,
         ID as transaction_seq,
         amount / 100 as amount,
         paymentmethod as payment_method,

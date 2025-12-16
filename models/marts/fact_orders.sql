@@ -8,4 +8,4 @@ payment.amount as amount
 
 from orders
 
-left join payment on orders.order_id = payment.orderid
+left join payment on orders.order_id = payment.order_id
