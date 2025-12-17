@@ -1,0 +1,13 @@
+models:
+  - name: stg_stripe__payments
+    columns:
+      - name: order_id
+        data_tests:
+          - not_null
+      - name: transaction_seq
+        data_tests:
+          - not_null
+      - name: amount
+      - name: payment_method
+      - name: status
+      - name: created_at
