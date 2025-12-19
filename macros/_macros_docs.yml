@@ -8,3 +8,10 @@ macros:
     - name: decimals
       type: integer
       description: number of decimals
+
+  - name: grant_select
+    description: give access to tables of schema to role
+    arguments:
+    - name: schema
+      type: string
+      description: schema name
