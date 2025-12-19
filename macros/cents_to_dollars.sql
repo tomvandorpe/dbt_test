@@ -1,5 +1,3 @@
-{%- macro cents_to_dollars(test,decimal_spaces) -%}
-
-round( {{test}} /100, {{decimal_spaces}} )
-
-{%- endmacro %}
+{%macro cents_to_dollars(column, decimals=2)-%}
+round({{column}}/100,{{decimals}})
+{%-endmacro%}
