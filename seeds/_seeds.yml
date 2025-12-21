@@ -1,0 +1,9 @@
+seeds:
+  - name: employees
+    description: blablabla
+    columns:
+      - name: employee_id
+        description: unique key
+        data_tests:
+          - unique
+          - not_null

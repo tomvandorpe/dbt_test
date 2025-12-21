@@ -1,0 +1,17 @@
+macros:
+  - name: cents_to_dollars
+    description: converts cents to dollars
+    arguments:
+    - name: column
+      type: string
+      description: name of column
+    - name: decimals
+      type: integer
+      description: number of decimals
+
+  - name: grant_select
+    description: give access to tables of schema to role
+    arguments:
+    - name: schema
+      type: string
+      description: schema name
