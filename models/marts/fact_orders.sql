@@ -1,10 +1,11 @@
-{#{{
+{{
     config(
         materialized='incremental',
         unique_key = 'order_id',
         incremental_strategy = 'merge',
+        on_schema_change='sync_all_columns'
     )
-}}#}
+}}
 
 
 with payments as (select * from {{ ref('stg_stripe__payments') }}),
@@ -35,8 +36,8 @@ order_payments as (
 
 
 select * from final
-{# {% if is_incremental() %}
+{% if is_incremental() %}
 where
-order_placed_at > (select max(order_placed_at) from {{this}})
+order_placed_at >= (select max(order_placed_at) from {{this}})
 {% endif %}
-order by order_placed_at desc #}
+order by order_placed_at desc 
