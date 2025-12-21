@@ -6,19 +6,10 @@ exposures:
     url: https://tinyurl.com/jaffle-shop-reporting
     description: "Exposure for orders data"
     depends_on:
-      - ref('fct_orders')
+      - ref('fact_orders')
     owner:
       name: Michael McData
       email: data@jaffleshop.com
 
-  - name: customers_data
-    label: customers_data
-    type: notebook
-    maturity: high
-    url: https://tinyurl.com/jaffle-shop-reporting
-    description: "Exposure for orders data"
-    depends_on:
-      - ref('customer_orders_exercise')
-    owner:
-      name: Tom vandorpe
-      email: tom@jaffleshop.com
+
+
