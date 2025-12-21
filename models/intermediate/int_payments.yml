@@ -1,0 +1,19 @@
+models:
+  - name: int_payments
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+      - name: bank_transfer_amount
+        data_tests:
+          - not_null
+      - name: credit_card_amount
+        data_tests:
+          - not_null
+      - name: coupon_amount
+        data_tests:
+          - not_null
+      - name: gift_card_amount
+        data_tests:
+          - not_null
