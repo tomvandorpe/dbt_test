@@ -14,3 +14,4 @@ models:
       - name: amount
         tests:
           - not_null
+     
