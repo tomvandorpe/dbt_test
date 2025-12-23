@@ -1,6 +1,10 @@
 seeds:
   - name: employees
     description: blablabla
+    config:
+      grants:
+        select: ['accountadmin', 'public']
+
     columns:
       - name: employee_id
         description: unique key
